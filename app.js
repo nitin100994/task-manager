@@ -8,7 +8,7 @@ const connectDb = require('./db/connect');
 require('dotenv').config();
 
 //middleware
-app.use(express.static('./dist'));
+app.use(express.static('./public'));
 app.use(express.json());
 
 app.use('/api/v1/tasks',tasks);
