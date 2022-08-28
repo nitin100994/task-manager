@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <title>Document</title>
+</head>
+    <div class="full_screen_container">
+        <div class="task_container task_submit">
+            <form class="task_form">
+                <h3 class="title">Task Manager</h3>
+                <div class="form_control">
+                    <input 
+                     type="text"
+                     class="task_input" 
+                     placeholder="e.g. wish list..">
+                    <button type="submit" class= "button">submit</button>
+                </div>
+            <div class="form_alert"></div>
+            </form>
+        </div>
+        <section class="task_container task_list">
+            <p class="loading-text">Loading...</p>
+            <div class="tasks"></div>
+        </section>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./task.js"></script>
+</body>
+</html>

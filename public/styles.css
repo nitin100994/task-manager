@@ -1,0 +1,149 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,button{
+  font-family: 'Roboto Mono';
+}
+
+h5{
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+a{
+  text-decoration: none;
+}
+
+.full_screen_container{
+  background-color: #c2e9fb;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.title{
+  text-align: center;
+}
+
+.task_container{
+  width: 50%;
+  background: whitesmoke;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.task_submit{
+  /* height: 30vh; */
+}
+
+.tasks{
+  margin-top: 20px;
+  /* min-height: 50vh; */
+}
+
+.task_list{
+  margin-top: 20px;
+}
+
+.task_form{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form_alert{
+  display: none;
+}
+
+.text_success{
+  color: green;
+}
+
+.text_fail{
+  color: red;
+}
+
+.single_task{
+  display: flex;
+  width: auto;
+  /* background-color: yellow; */
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 3px 0px grey;
+}
+
+.single_task>h5>span{
+  margin-right: 10px;
+}
+
+.fa-check-circle,.edit-link{
+  color: green;
+}
+
+.edit-link{
+  font-size: 0.75rem;
+}
+
+.delete-btn{
+  color: #842029;
+  font-size: 0.75rem;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.task_completed{
+  text-decoration: line-through;
+}
+
+.false>span{
+  visibility: hidden;
+}
+
+/* edit css */
+.form_control{
+  padding: 20px 80px;
+}
+
+.flex_container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.edit_button{
+    margin: 30px auto;
+    display: block;
+    padding: 10px 45px;
+    background: dodgerblue;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    border: none;
+}
+
+.edit_button:hover{
+  background: rgb(31, 72, 207);
+}
+
+.task_edit_msg{
+  visibility: hidden;
+  text-align: center;
+}
+
+.back_to_tasks{
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+.margin_top{
+  margin-top: 20px;
+}

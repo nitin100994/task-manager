@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./edit.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="full_screen_container">
+        <div class="task_container">
+            <form class="task_edit_form">
+                <h3 class="title">Edit Task</h3>
+                <div class="form_control">
+                    <div class="flex_container">
+                        <label class="label">Task ID</label>
+                        <input type="text" class="task_id" disabled>
+                    </div>
+                    <div class="flex_container">
+                        <label class="label">Name</label>
+                        <input type="text" required class="task_name" placeholder="Task Name..">
+                    </div>
+                    <div class="flex_container">
+                        <label class="label">Completed</label>
+                        <input type="checkbox" class="task_status">
+                    </div>
+                <button type="submit" class= "edit_button">EDIT</button>
+                </div>
+                <div class="task_edit_msg"></div>
+            </form>
+        </div>
+        <a class="back_to_tasks margin_top" href="index.html">Back To Task</a>
+
+    </div>
+</body>
+</html>
